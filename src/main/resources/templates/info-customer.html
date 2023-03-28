@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer info</title>
+  <link rel="stylesheet" type="text/css" href="../static/css/styles.css" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div class="test">
+  <h1>Customer Info</h1>
+  <table class="table_outer">
+    <tr>
+      <th class="table">License Number</th>
+      <th class="table">License Date</th>
+      <th class="table">Name</th>
+      <th class="table">Email</th>
+      <th class="table">Phone Number</th>
+      <th class="table">Address</th>
+      <th class="table">Zip-Code</th>
+      <th class="table">City</th>
+    </tr>
+    <tr>
+      <td class="table" th:text="${customer.customerLicense}"></td>
+      <td class="table" th:text="${customer.customerLicenseDate}"></td>
+      <td class="table" th:text="${customer.customerName}"></td>
+      <td class="table" th:text="${customer.customerEmail}"></td>
+      <td class="table" th:text="${customer.customerPhoneNumber}"></td>
+      <td class="table" th:text="${customer.customerAddress}"></td>
+      <td class="table" th:text="${customer.customerZip}"></td>
+      <td class="table" th:text="${customer.customerCity}"></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Car info</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div class="test">
+    <h1>Car Info</h1>
+    <table class="table_outer">
+        <tr>
+            <th class="table">License Number</th>
+            <th class="table">Status</th>
+            <th class="table">Brand</th>
+            <th class="table">Model</th>
+            <th class="table">Fuel Type</th>
+            <th class="table">Registration Date</th>
+            <th class="table">Km Driven</th>
+            <th class="table">Group</th>
+        </tr>
+        <tr>
+            <td class="table" th:text="${car.carLicense}"></td>
+            <td class="table" th:text="${car.carStatus}"></td>
+            <td class="table" th:text="${car.carBrand}"></td>
+            <td class="table" th:text="${car.carModel}"></td>
+            <td class="table" th:text="${car.carFuelType}"></td>
+            <td class="table" th:text="${car.carRegistrationDate}"></td>
+            <td class="table" th:text="${car.carKmDriven}"></td>
+            <td class="table" th:text="${car.groupID}"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Customer</title>
+</head>
+<body>
+<div class="container">
+  <h1>Add new customer</h1>
+  <form action="#" th:action="@{/create/customer}" method="POST">
+
+    <label for="license-number">License number:</label>
+    <input id="license-number" name="customer-license" type="text"><br>
+
+    <label for="license-date">License Date:</label>
+    <input id="license-date" name="customer-license-date" type="date"><br>
+
+    <label for="name">Name:</label>
+    <input id="name" name="customer-name" type="text"><br>
+
+    <label for="email">Email:</label>
+    <input id="email" name="customer-email" type="text"><br>
+
+    <label for="phone-number">Phone Number:</label>
+    <input id="phone-number" name="customer-phone-number" type="number"><br>
+
+    <label for="address">Address:</label>
+    <input id="address" name="customer-address" type="text"><br>
+
+    <label for="zip">Zip-Code:</label>
+    <input id="zip" name="customer-zip" type="number"><br>
+
+    <label for="city">City:</label>
+    <input id="city" name="customer-city" type="text"><br>
+
+    <input type="submit" value="submit">
+  </form>
+</div>
+</body>
+</html>

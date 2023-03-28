@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Update customer</title>
+  <link rel="stylesheet" type="text/css" href="../static/css/styles.css" th:href="@{styles.css}">
+</head>
+<body>
+<form action="#" th:action="@{/update/customer}" method="POST">
+  <input id="license-number" name="customer-license" type="hidden" th:value="${customer.customerLicense}">
+
+  <span>License Number:</span>
+  <span th:text="${customer.customerLicense}"></span><br><br>
+
+  <label for="email">Email:</label>
+  <input id="email" name="customer-email" type="text" th:value="${customer.customerEmail}">
+
+  <label for="phone-number">Phone Number:</label>
+  <input id="phone-number" name="customer-phone-number" type="text" th:value="${customer.customerPhoneNumber}">
+
+  <label for="address">Address:</label>
+  <input id="address" name="customer-address" type="text" th:value="${customer.customerAddress}">
+
+  <label for="zip">Zip-Code:</label>
+  <input id="zip" name="customer-zip" type="text" th:value="${customer.customerZip}">
+
+  <label for="city">City:</label>
+  <input id="city" name="customer-city" type="text" th:value="${customer.customerCity}">
+
+  <input type="submit" value="submit">
+</form>
+</body>
+</html>
